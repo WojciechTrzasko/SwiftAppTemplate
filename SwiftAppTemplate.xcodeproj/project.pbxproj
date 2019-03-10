@@ -72,9 +72,12 @@
 		21B2EFE52235361C00E0909D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				212A8B55223534DC0055AF27 /* Main.storyboard */,
-				212A8B5A223534DD0055AF27 /* LaunchScreen.storyboard */,
+				21B2EFF42235709100E0909D /* Common */,
+				21B2EFF322356FAB00E0909D /* Features */,
+				21B2EFF222356BB600E0909D /* Models */,
+				21B2EFF6223570A900E0909D /* Services */,
 				212A8B51223534DC0055AF27 /* AppDelegate.swift */,
+				212A8B55223534DC0055AF27 /* Main.storyboard */,
 				212A8B53223534DC0055AF27 /* ViewController.swift */,
 			);
 			path = Sources;
@@ -85,6 +88,7 @@
 			children = (
 				212A8B58223534DD0055AF27 /* Assets.xcassets */,
 				21B2EFEF2235429C00E0909D /* Settings.bundle */,
+				212A8B5A223534DD0055AF27 /* LaunchScreen.storyboard */,
 				212A8B5D223534DD0055AF27 /* Info.plist */,
 			);
 			path = Resources;
@@ -104,6 +108,114 @@
 				21B2EFED2235418500E0909D /* licenses.yml */,
 			);
 			path = Configurations;
+			sourceTree = "<group>";
+		};
+		21B2EFF1223547DA00E0909D /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				21B2EFFA223571F100E0909D /* Errors */,
+				21B2EFFC2235722300E0909D /* Logging */,
+				21B2EFFB2235721200E0909D /* Notifications */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		21B2EFF222356BB600E0909D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		21B2EFF322356FAB00E0909D /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		21B2EFF42235709100E0909D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				21B2EFF82235715400E0909D /* Extensions */,
+				21B2EFF1223547DA00E0909D /* Foundation */,
+				21B2EFF52235709C00E0909D /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		21B2EFF52235709C00E0909D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				21B2EFFE2235727600E0909D /* DataSources */,
+				21B2EFFD2235726500E0909D /* Keyboard */,
+				21B2EFF72235714600E0909D /* Stylesheets */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		21B2EFF6223570A900E0909D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				21B2EFF92235716400E0909D /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		21B2EFF72235714600E0909D /* Stylesheets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stylesheets;
+			sourceTree = "<group>";
+		};
+		21B2EFF82235715400E0909D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		21B2EFF92235716400E0909D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		21B2EFFA223571F100E0909D /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		21B2EFFB2235721200E0909D /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		21B2EFFC2235722300E0909D /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		21B2EFFD2235726500E0909D /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		21B2EFFE2235727600E0909D /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
