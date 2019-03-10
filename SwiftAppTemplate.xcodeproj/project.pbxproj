@@ -12,6 +12,7 @@
 		212A8B57223534DC0055AF27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212A8B55223534DC0055AF27 /* Main.storyboard */; };
 		212A8B59223534DD0055AF27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212A8B58223534DD0055AF27 /* Assets.xcassets */; };
 		212A8B5C223534DD0055AF27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212A8B5A223534DD0055AF27 /* LaunchScreen.storyboard */; };
+		21B2EFE92235399800E0909D /* Reusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B2EFE82235399800E0909D /* Reusable.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		212A8B58223534DD0055AF27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		212A8B5B223534DD0055AF27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		212A8B5D223534DD0055AF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21B2EFE82235399800E0909D /* Reusable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reusable.framework; path = Carthage/Build/iOS/Reusable.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21B2EFE92235399800E0909D /* Reusable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				212A8B50223534DC0055AF27 /* App */,
+				21B2EFE72235398300E0909D /* Frameworks */,
 				212A8B4F223534DC0055AF27 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +84,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		21B2EFE72235398300E0909D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21B2EFE82235399800E0909D /* Reusable.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -90,6 +102,7 @@
 				212A8B4A223534DC0055AF27 /* Sources */,
 				212A8B4B223534DC0055AF27 /* Frameworks */,
 				212A8B4C223534DC0055AF27 /* Resources */,
+				21B2EFEA223539B600E0909D /* Carthage - copy frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,6 +158,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21B2EFEA223539B600E0909D /* Carthage - copy frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Reusable.framework",
+			);
+			name = "Carthage - copy frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Reusable.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		212A8B4A223534DC0055AF27 /* Sources */ = {
@@ -299,6 +335,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/App/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -316,6 +356,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/App/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
