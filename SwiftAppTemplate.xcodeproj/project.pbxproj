@@ -13,6 +13,8 @@
 		212A8B59223534DD0055AF27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212A8B58223534DD0055AF27 /* Assets.xcassets */; };
 		212A8B5C223534DD0055AF27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212A8B5A223534DD0055AF27 /* LaunchScreen.storyboard */; };
 		21B2EFE92235399800E0909D /* Reusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B2EFE82235399800E0909D /* Reusable.framework */; };
+		21B2EFEE2235418500E0909D /* licenses.yml in Resources */ = {isa = PBXBuildFile; fileRef = 21B2EFED2235418500E0909D /* licenses.yml */; };
+		21B2EFF02235429C00E0909D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 21B2EFEF2235429C00E0909D /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		212A8B5B223534DD0055AF27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		212A8B5D223534DD0055AF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21B2EFE82235399800E0909D /* Reusable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reusable.framework; path = Carthage/Build/iOS/Reusable.framework; sourceTree = SOURCE_ROOT; };
+		21B2EFED2235418500E0909D /* licenses.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = licenses.yml; sourceTree = "<group>"; };
+		21B2EFEF2235429C00E0909D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		212A8B50223534DC0055AF27 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				21B2EFEC2235416800E0909D /* Configurations */,
 				21B2EFE62235363F00E0909D /* Resources */,
 				21B2EFE52235361C00E0909D /* Sources */,
 			);
@@ -79,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				212A8B58223534DD0055AF27 /* Assets.xcassets */,
+				21B2EFEF2235429C00E0909D /* Settings.bundle */,
 				212A8B5D223534DD0055AF27 /* Info.plist */,
 			);
 			path = Resources;
@@ -92,6 +98,14 @@
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
+		21B2EFEC2235416800E0909D /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				21B2EFED2235418500E0909D /* licenses.yml */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,6 +116,7 @@
 				212A8B4A223534DC0055AF27 /* Sources */,
 				212A8B4B223534DC0055AF27 /* Frameworks */,
 				212A8B4C223534DC0055AF27 /* Resources */,
+				21B2EFEB22353FD100E0909D /* LicensePlist - create licenses list */,
 				21B2EFEA223539B600E0909D /* Carthage - copy frameworks */,
 			);
 			buildRules = (
@@ -153,6 +168,8 @@
 			files = (
 				212A8B5C223534DD0055AF27 /* LaunchScreen.storyboard in Resources */,
 				212A8B59223534DD0055AF27 /* Assets.xcassets in Resources */,
+				21B2EFF02235429C00E0909D /* Settings.bundle in Resources */,
+				21B2EFEE2235418500E0909D /* licenses.yml in Resources */,
 				212A8B57223534DC0055AF27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,6 +196,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		21B2EFEB22353FD100E0909D /* LicensePlist - create licenses list */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "LicensePlist - create licenses list";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which license-plist >/dev/null;\nthen\n    license-plist --config-path App/Configurations/licenses.yml --output-path App/Resources/Settings.bundle --suppress-opening-directory;\n    echo \"Licenses list successfully created.\";\nelse\n    echo \"Licenses list could not be created. license-plist not installed.\";\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

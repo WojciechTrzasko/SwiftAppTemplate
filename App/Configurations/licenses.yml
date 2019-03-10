@@ -1,0 +1,14 @@
+# Specify libraries manually
+manual:
+
+# - source: <link-to-framework>
+# name: <framework-name>
+# version: <framework-version>
+# body: '
+# <framework-license-body>
+# '
+
+# Specify libraries to be renamed
+rename:
+
+# <original-name>: <new-name>
