@@ -8,6 +8,7 @@
 
 import UIKit
 
+// OVERRIDE: Use this as a set of constants for UI elements
 enum UIPalette {
     
     enum FontSize: CGFloat {

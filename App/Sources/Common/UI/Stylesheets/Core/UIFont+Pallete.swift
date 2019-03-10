@@ -1,5 +1,5 @@
 //
-//  UIFont+Initializers.swift
+//  UIFont+Pallete.swift
 //  SwiftAppTemplate
 //
 //  Created by Wojciech Trzasko on 10/03/2019.

@@ -1,5 +1,5 @@
 //
-//  UIColor+Operators.swift
+//  UIColor+Pallete.swift
 //  SwiftAppTemplate
 //
 //  Created by Wojciech Trzasko on 10/03/2019.

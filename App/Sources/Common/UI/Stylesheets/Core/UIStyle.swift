@@ -1,5 +1,5 @@
 //
-//  Style.swift
+//  UIStyle.swift
 //  SwiftAppTemplate
 //
 //  Created by Wojciech Trzasko on 10/03/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public struct Style<View: UIView> {
+public struct UIStyle<View: UIView> {
     public let style: (View) -> Void
     
     public init(_ style: @escaping (View) -> Void) {
