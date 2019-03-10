@@ -15,6 +15,13 @@
 		21B2EFE92235399800E0909D /* Reusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B2EFE82235399800E0909D /* Reusable.framework */; };
 		21B2EFEE2235418500E0909D /* licenses.yml in Resources */ = {isa = PBXBuildFile; fileRef = 21B2EFED2235418500E0909D /* licenses.yml */; };
 		21B2EFF02235429C00E0909D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 21B2EFEF2235429C00E0909D /* Settings.bundle */; };
+		21E2773F2235764700892DE3 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E2773E2235764700892DE3 /* Style.swift */; };
+		21E27741223576B800892DE3 /* UIView+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E27740223576B800892DE3 /* UIView+Style.swift */; };
+		21E277432235775000892DE3 /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E277422235775000892DE3 /* Stylesheet.swift */; };
+		21E27745223577BC00892DE3 /* UIFont+Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E27744223577BC00892DE3 /* UIFont+Initializers.swift */; };
+		21E27747223577F600892DE3 /* UIPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E27746223577F600892DE3 /* UIPalette.swift */; };
+		21E277492235783500892DE3 /* UIColor+Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E277482235783500892DE3 /* UIColor+Initializers.swift */; };
+		21E2774B2235786700892DE3 /* UIColor+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E2774A2235786700892DE3 /* UIColor+Operators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,13 @@
 		21B2EFE82235399800E0909D /* Reusable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reusable.framework; path = Carthage/Build/iOS/Reusable.framework; sourceTree = SOURCE_ROOT; };
 		21B2EFED2235418500E0909D /* licenses.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = licenses.yml; sourceTree = "<group>"; };
 		21B2EFEF2235429C00E0909D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		21E2773E2235764700892DE3 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		21E27740223576B800892DE3 /* UIView+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Style.swift"; sourceTree = "<group>"; };
+		21E277422235775000892DE3 /* Stylesheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
+		21E27744223577BC00892DE3 /* UIFont+Initializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Initializers.swift"; sourceTree = "<group>"; };
+		21E27746223577F600892DE3 /* UIPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPalette.swift; sourceTree = "<group>"; };
+		21E277482235783500892DE3 /* UIColor+Initializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Initializers.swift"; sourceTree = "<group>"; };
+		21E2774A2235786700892DE3 /* UIColor+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Operators.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +151,6 @@
 		21B2EFF42235709100E0909D /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				21B2EFF82235715400E0909D /* Extensions */,
 				21B2EFF1223547DA00E0909D /* Foundation */,
 				21B2EFF52235709C00E0909D /* UI */,
 			);
@@ -148,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				21B2EFFE2235727600E0909D /* DataSources */,
+				21B2EFF82235715400E0909D /* Extensions */,
 				21B2EFFD2235726500E0909D /* Keyboard */,
 				21B2EFF72235714600E0909D /* Stylesheets */,
 			);
@@ -165,6 +179,10 @@
 		21B2EFF72235714600E0909D /* Stylesheets */ = {
 			isa = PBXGroup;
 			children = (
+				21E2773E2235764700892DE3 /* Style.swift */,
+				21E277422235775000892DE3 /* Stylesheet.swift */,
+				21E27746223577F600892DE3 /* UIPalette.swift */,
+				21E27740223576B800892DE3 /* UIView+Style.swift */,
 			);
 			path = Stylesheets;
 			sourceTree = "<group>";
@@ -172,6 +190,9 @@
 		21B2EFF82235715400E0909D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				21E27744223577BC00892DE3 /* UIFont+Initializers.swift */,
+				21E277482235783500892DE3 /* UIColor+Initializers.swift */,
+				21E2774A2235786700892DE3 /* UIColor+Operators.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -335,7 +356,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				212A8B54223534DC0055AF27 /* ViewController.swift in Sources */,
+				21E2773F2235764700892DE3 /* Style.swift in Sources */,
+				21E277432235775000892DE3 /* Stylesheet.swift in Sources */,
+				21E27745223577BC00892DE3 /* UIFont+Initializers.swift in Sources */,
+				21E277492235783500892DE3 /* UIColor+Initializers.swift in Sources */,
+				21E2774B2235786700892DE3 /* UIColor+Operators.swift in Sources */,
+				21E27741223576B800892DE3 /* UIView+Style.swift in Sources */,
 				212A8B52223534DC0055AF27 /* AppDelegate.swift in Sources */,
+				21E27747223577F600892DE3 /* UIPalette.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
