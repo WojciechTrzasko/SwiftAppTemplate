@@ -1,3 +1,7 @@
+name: Nimble, nameSpecified: , owner: Quick, version: v8.0.1
+
+name: Quick, nameSpecified: , owner: Quick, version: v2.0.0
+
 name: Reusable, nameSpecified: , owner: AliSoftware, version: 4.0.5
 
 add-version-numbers: false

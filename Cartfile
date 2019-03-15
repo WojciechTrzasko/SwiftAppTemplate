@@ -1,2 +1,6 @@
+# Main app dependencies
 github "AliSoftware/Reusable"
 
+# Tests dependencies
+github "Quick/Nimble"
+github "Quick/Quick"
