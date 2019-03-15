@@ -318,6 +318,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 212A8B60223534DD0055AF27 /* Build configuration list for PBXNativeTarget "App" */;
 			buildPhases = (
+				2146CDC4223C452F00C09B14 /* Show warinings for landmarks */,
 				212A8B4A223534DC0055AF27 /* Sources */,
 				212A8B4B223534DC0055AF27 /* Frameworks */,
 				212A8B4C223534DC0055AF27 /* Resources */,
@@ -412,6 +413,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2146CDC4223C452F00C09B14 /* Show warinings for landmarks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Show warinings for landmarks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\nTAGS=\"TODO:|FIXME:|OVERRIDE:\"\necho \"searching ${SRCROOT}/App for ${TAGS}\"\nfind \"${SRCROOT}/App\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"\nfi\n";
+		};
 		21B2EFEA223539B600E0909D /* Carthage - copy frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
