@@ -1,0 +1,6 @@
+//
+//  Debug.xcconfig
+//
+
+PRODUCT_BUNDLE_IDENTIFIER = com.template.App.Debug
+PRODUCT_NAME = Template App Debug

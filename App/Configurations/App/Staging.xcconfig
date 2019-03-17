@@ -1,0 +1,6 @@
+//
+//  Staging.xcconfig
+//
+
+PRODUCT_BUNDLE_IDENTIFIER = com.template.App.Staging
+PRODUCT_NAME = Template App Staging

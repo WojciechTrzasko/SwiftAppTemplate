@@ -38,13 +38,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		212A8B4E223534DC0055AF27 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		212A8B4E223534DC0055AF27 /* Template App Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Template App Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		212A8B51223534DC0055AF27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		212A8B53223534DC0055AF27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		212A8B56223534DC0055AF27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		212A8B58223534DD0055AF27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		212A8B5B223534DD0055AF27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		212A8B5D223534DD0055AF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2146CDCA223EE8D600C09B14 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		2146CDCB223EE94300C09B14 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		2146CDCC223EE95200C09B14 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		21B2EFE82235399800E0909D /* Reusable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reusable.framework; path = Carthage/Build/iOS/Reusable.framework; sourceTree = SOURCE_ROOT; };
 		21B2EFED2235418500E0909D /* licenses.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = licenses.yml; sourceTree = "<group>"; };
 		21B2EFEF2235429C00E0909D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -96,7 +99,7 @@
 		212A8B4F223534DC0055AF27 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				212A8B4E223534DC0055AF27 /* App.app */,
+				212A8B4E223534DC0055AF27 /* Template App Debug.app */,
 				21E277542235B83200892DE3 /* AppTests.xctest */,
 			);
 			name = Products;
@@ -108,6 +111,16 @@
 				21B2EFEC2235416800E0909D /* Configurations */,
 				21B2EFE62235363F00E0909D /* Resources */,
 				21B2EFE52235361C00E0909D /* Sources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2146CDC9223EE87000C09B14 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2146CDCB223EE94300C09B14 /* Debug.xcconfig */,
+				2146CDCC223EE95200C09B14 /* Release.xcconfig */,
+				2146CDCA223EE8D600C09B14 /* Staging.xcconfig */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -150,6 +163,7 @@
 		21B2EFEC2235416800E0909D /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
+				2146CDC9223EE87000C09B14 /* App */,
 				21B2EFED2235418500E0909D /* licenses.yml */,
 			);
 			path = Configurations;
@@ -318,7 +332,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 212A8B60223534DD0055AF27 /* Build configuration list for PBXNativeTarget "App" */;
 			buildPhases = (
-				2146CDC4223C452F00C09B14 /* Show warinings for landmarks */,
+				2146CDC4223C452F00C09B14 /* Warnings - show for landmarks */,
 				212A8B4A223534DC0055AF27 /* Sources */,
 				212A8B4B223534DC0055AF27 /* Frameworks */,
 				212A8B4C223534DC0055AF27 /* Resources */,
@@ -331,7 +345,7 @@
 			);
 			name = App;
 			productName = SwiftAppTemplate;
-			productReference = 212A8B4E223534DC0055AF27 /* App.app */;
+			productReference = 212A8B4E223534DC0055AF27 /* Template App Debug.app */;
 			productType = "com.apple.product-type.application";
 		};
 		21E277532235B83200892DE3 /* AppTests */ = {
@@ -413,7 +427,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2146CDC4223C452F00C09B14 /* Show warinings for landmarks */ = {
+		2146CDC4223C452F00C09B14 /* Warnings - show for landmarks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -422,7 +436,7 @@
 			);
 			inputPaths = (
 			);
-			name = "Show warinings for landmarks";
+			name = "Warnings - show for landmarks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -528,6 +542,7 @@
 /* Begin XCBuildConfiguration section */
 		212A8B5E223534DD0055AF27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2146CDCB223EE94300C09B14 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -589,6 +604,7 @@
 		};
 		212A8B5F223534DD0055AF27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2146CDCC223EE95200C09B14 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -646,7 +662,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -656,8 +673,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = trzasko.SwiftAppTemplate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(PRODUCT_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -667,7 +685,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -677,12 +696,121 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = trzasko.SwiftAppTemplate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(PRODUCT_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
+		};
+		2146CDC6223EE75800C09B14 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2146CDCA223EE8D600C09B14 /* Staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Staging;
+		};
+		2146CDC7223EE75800C09B14 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/App/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(PRODUCT_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		2146CDC8223EE75800C09B14 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = trzasko.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/App";
+			};
+			name = Staging;
 		};
 		21E2775C2235B83200892DE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -737,6 +865,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				212A8B5E223534DD0055AF27 /* Debug */,
+				2146CDC6223EE75800C09B14 /* Staging */,
 				212A8B5F223534DD0055AF27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -746,6 +875,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				212A8B61223534DD0055AF27 /* Debug */,
+				2146CDC7223EE75800C09B14 /* Staging */,
 				212A8B62223534DD0055AF27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -755,6 +885,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21E2775C2235B83200892DE3 /* Debug */,
+				2146CDC8223EE75800C09B14 /* Staging */,
 				21E2775D2235B83200892DE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

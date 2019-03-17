@@ -1,0 +1,6 @@
+//
+//  Release.xcconfig
+//
+
+PRODUCT_BUNDLE_IDENTIFIER = com.template.App
+PRODUCT_NAME = Template App
