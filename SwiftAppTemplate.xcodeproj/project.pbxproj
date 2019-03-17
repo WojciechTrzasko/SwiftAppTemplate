@@ -45,7 +45,7 @@
 		212A8B58223534DD0055AF27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		212A8B5B223534DD0055AF27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		212A8B5D223534DD0055AF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2146CDCA223EE8D600C09B14 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		2146CDCA223EE8D600C09B14 /* AdHoc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AdHoc.xcconfig; sourceTree = "<group>"; };
 		2146CDCB223EE94300C09B14 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		2146CDCC223EE95200C09B14 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		21B2EFE82235399800E0909D /* Reusable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reusable.framework; path = Carthage/Build/iOS/Reusable.framework; sourceTree = SOURCE_ROOT; };
@@ -119,9 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				212A8B5D223534DD0055AF27 /* Info.plist */,
+				2146CDCA223EE8D600C09B14 /* AdHoc.xcconfig */,
 				2146CDCB223EE94300C09B14 /* Debug.xcconfig */,
 				2146CDCC223EE95200C09B14 /* Release.xcconfig */,
-				2146CDCA223EE8D600C09B14 /* Staging.xcconfig */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -704,9 +704,9 @@
 			};
 			name = Release;
 		};
-		2146CDC6223EE75800C09B14 /* Staging */ = {
+		2146CDC6223EE75800C09B14 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2146CDCA223EE8D600C09B14 /* Staging.xcconfig */;
+			baseConfigurationReference = 2146CDCA223EE8D600C09B14 /* AdHoc.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -764,9 +764,9 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Staging;
+			name = AdHoc;
 		};
-		2146CDC7223EE75800C09B14 /* Staging */ = {
+		2146CDC7223EE75800C09B14 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -787,9 +787,9 @@
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Staging;
+			name = AdHoc;
 		};
-		2146CDC8223EE75800C09B14 /* Staging */ = {
+		2146CDC8223EE75800C09B14 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -810,7 +810,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/App";
 			};
-			name = Staging;
+			name = AdHoc;
 		};
 		21E2775C2235B83200892DE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -865,7 +865,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				212A8B5E223534DD0055AF27 /* Debug */,
-				2146CDC6223EE75800C09B14 /* Staging */,
+				2146CDC6223EE75800C09B14 /* AdHoc */,
 				212A8B5F223534DD0055AF27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -875,7 +875,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				212A8B61223534DD0055AF27 /* Debug */,
-				2146CDC7223EE75800C09B14 /* Staging */,
+				2146CDC7223EE75800C09B14 /* AdHoc */,
 				212A8B62223534DD0055AF27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -885,7 +885,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21E2775C2235B83200892DE3 /* Debug */,
-				2146CDC8223EE75800C09B14 /* Staging */,
+				2146CDC8223EE75800C09B14 /* AdHoc */,
 				21E2775D2235B83200892DE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
