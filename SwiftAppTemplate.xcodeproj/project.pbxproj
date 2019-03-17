@@ -118,6 +118,7 @@
 		2146CDC9223EE87000C09B14 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				212A8B5D223534DD0055AF27 /* Info.plist */,
 				2146CDCB223EE94300C09B14 /* Debug.xcconfig */,
 				2146CDCC223EE95200C09B14 /* Release.xcconfig */,
 				2146CDCA223EE8D600C09B14 /* Staging.xcconfig */,
@@ -145,7 +146,6 @@
 				212A8B58223534DD0055AF27 /* Assets.xcassets */,
 				21B2EFEF2235429C00E0909D /* Settings.bundle */,
 				212A8B5A223534DD0055AF27 /* LaunchScreen.storyboard */,
-				212A8B5D223534DD0055AF27 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -668,7 +668,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/App/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/App/Configurations/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -691,7 +691,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/App/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/App/Configurations/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -776,7 +776,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/App/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/App/Configurations/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
