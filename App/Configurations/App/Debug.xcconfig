@@ -4,4 +4,4 @@
 
 PRODUCT_BUNDLE_IDENTIFIER = com.template.App.Debug
 PRODUCT_ICON_NAME = AppIcon
-PRODUCT_NAME = Template App Debug
+PRODUCT_NAME = App Debug
